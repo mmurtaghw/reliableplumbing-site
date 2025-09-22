@@ -11033,16 +11033,27 @@ header.masthead h1, header.masthead .h1 {
 .social-link {
   color: #1f6cd5;
 }
-.social-link i {
+.social-link i,
+.social-link svg {
   transition: transform 0.2s ease, color 0.2s ease;
+  width: 2rem;
+  height: 2rem;
+}
+.social-link svg {
+  fill: currentColor;
 }
 .social-link span {
   color: #6c757d;
   transition: color 0.2s ease;
+  display: block;
 }
-.social-link:hover i {
+.social-link:hover i,
+.social-link:hover svg {
   color: #f28f3c !important;
   transform: translateY(-4px);
+}
+.social-link:hover svg {
+  fill: currentColor;
 }
 .social-link:hover span {
   color: #1f6cd5;
