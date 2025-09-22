@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #f4623a;
+  --bs-primary: #1f6cd5;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 244, 98, 58;
+  --bs-primary-rgb: 31, 108, 213;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f4623a;
-  --bs-link-hover-color: #c34e2e;
+  --bs-link-color: #1f6cd5;
+  --bs-link-hover-color: #184fa3;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -10856,7 +10856,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #f28f3c;
   opacity: 1;
 }
 
@@ -10882,10 +10882,10 @@ hr.divider-light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #1f6cd5;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #1f6cd5 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10916,20 +10916,20 @@ hr.divider-light {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f4623a;
+    color: #1f6cd5;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: #1f6cd5;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(180deg, rgba(6, 18, 38, 0.6) 0%, rgba(6, 18, 38, 0.85) 100%), url("../assets/img/keyart/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10958,14 +10958,14 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+#screenshots .container-fluid, #screenshots .container-sm, #screenshots .container-md, #screenshots .container-lg, #screenshots .container-xl, #screenshots .container-xxl {
   max-width: 1920px;
 }
-#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+#screenshots .container-fluid .portfolio-box, #screenshots .container-sm .portfolio-box, #screenshots .container-md .portfolio-box, #screenshots .container-lg .portfolio-box, #screenshots .container-xl .portfolio-box, #screenshots .container-xxl .portfolio-box {
   position: relative;
   display: block;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+#screenshots .container-fluid .portfolio-box .portfolio-box-caption, #screenshots .container-sm .portfolio-box .portfolio-box-caption, #screenshots .container-md .portfolio-box .portfolio-box-caption, #screenshots .container-lg .portfolio-box .portfolio-box-caption, #screenshots .container-xl .portfolio-box .portfolio-box-caption, #screenshots .container-xxl .portfolio-box .portfolio-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10977,19 +10977,73 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(17, 71, 131, 0.85);
   transition: opacity 0.25s ease;
   text-align: center;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+#screenshots .container-fluid .portfolio-box .portfolio-box-caption .project-category, #screenshots .container-sm .portfolio-box .portfolio-box-caption .project-category, #screenshots .container-md .portfolio-box .portfolio-box-caption .project-category, #screenshots .container-lg .portfolio-box .portfolio-box-caption .project-category, #screenshots .container-xl .portfolio-box .portfolio-box-caption .project-category, #screenshots .container-xxl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+#screenshots .container-fluid .portfolio-box .portfolio-box-caption .project-name, #screenshots .container-sm .portfolio-box .portfolio-box-caption .project-name, #screenshots .container-md .portfolio-box .portfolio-box-caption .project-name, #screenshots .container-lg .portfolio-box .portfolio-box-caption .project-name, #screenshots .container-xl .portfolio-box .portfolio-box-caption .project-name, #screenshots .container-xxl .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
 }
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+#screenshots .container-fluid .portfolio-box:hover .portfolio-box-caption, #screenshots .container-sm .portfolio-box:hover .portfolio-box-caption, #screenshots .container-md .portfolio-box:hover .portfolio-box-caption, #screenshots .container-lg .portfolio-box:hover .portfolio-box-caption, #screenshots .container-xl .portfolio-box:hover .portfolio-box-caption, #screenshots .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+/* Pinfall theme overrides */
+.btn-primary {
+  background-color: #1f6cd5;
+  border-color: #1f6cd5;
+}
+.btn-primary:hover {
+  background-color: #184fa3;
+  border-color: #184fa3;
+}
+.btn-primary:focus, .btn-primary.focus {
+  background-color: #184fa3;
+  border-color: #184fa3;
+  box-shadow: 0 0 0 0.25rem rgba(31, 108, 213, 0.35);
+}
+.btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+  background-color: #123b7a;
+  border-color: #123b7a;
+}
+.btn-primary:disabled, .btn-primary.disabled {
+  background-color: #1f6cd5;
+  border-color: #1f6cd5;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.bg-primary {
+  background-color: #0f2f5c !important;
+  background-image: radial-gradient(circle at top, rgba(64, 143, 226, 0.45), transparent 60%);
+}
+
+.divider {
+  background-color: #f28f3c;
+}
+
+.social-link {
+  color: #1f6cd5;
+}
+.social-link i {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.social-link span {
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+.social-link:hover i {
+  color: #f28f3c !important;
+  transform: translateY(-4px);
+}
+.social-link:hover span {
+  color: #1f6cd5;
 }
