@@ -10929,11 +10929,39 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(180deg, rgba(6, 18, 38, 0.6) 0%, rgba(6, 18, 38, 0.85) 100%), url("../assets/img/keyart/hero.png");
+  background-image: url("../assets/img/keyart/library_hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+header.masthead .masthead-logo {
+  max-width: 20rem;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+header.masthead .hero-cta {
+  margin: 1.5rem auto 0;
+  max-width: 24rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+header.masthead .coming-soon {
+  color: #fff;
+  font-family: 'League Spartan', 'Merriweather Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
@@ -10945,8 +10973,20 @@ header.masthead h1, header.masthead .h1 {
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
+  header.masthead .masthead-logo {
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  header.masthead .hero-cta {
+    max-width: 30rem;
+    gap: 1rem;
+  }
   header.masthead p {
     font-size: 1.15rem;
+  }
+  header.masthead .coming-soon {
+    font-size: 4.25rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -11027,6 +11067,45 @@ header.masthead h1, header.masthead .h1 {
   border-color: #1f6cd5;
 }
 
+.btn-steam {
+  background: linear-gradient(135deg, #1b2838, #2a475e);
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2.75rem;
+  font-family: 'League Spartan', 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.btn-steam:hover {
+  color: #fff;
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.4);
+}
+.btn-steam:focus, .btn-steam.focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(27, 40, 56, 0.45);
+}
+.btn-steam:active, .btn-steam.active {
+  transform: translateY(0);
+  filter: brightness(1);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+.btn-steam i {
+  font-size: 1.5rem;
+}
+header.masthead .btn-steam {
+  margin: 0;
+}
+
 #mainNav .navbar-brand {
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -11069,3 +11148,108 @@ header.masthead h1, header.masthead .h1 {
 .social-link:hover span {
   color: #1f6cd5;
 }
+
+/* Background treatment */
+.masthead.hero-bg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Global overlay for large screens (covers busy background) */
+.masthead.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Top heavier to clear logo area; adjust stops to taste */
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0.15) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Simple opaque overlay for small screens (where backdrop-filter is expensive) */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+/* Text panel that lifts copy off the image */
+.hero-panel {
+  position: relative;
+  z-index: 1;
+  max-width: 44rem;
+  padding: 1rem 1.25rem;
+  color: #fff;
+  /* Subtle glass effect only on larger screens */
+  background: rgba(0,0,0,0.28);
+  border-radius: .75rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+@media (min-width: 992px) {
+  .hero-panel {
+    padding: 1.25rem 1.5rem;
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+}
+
+/* Typography */
+.masthead-logo {
+  /* Keep logo crisp but not overpowering on small screens */
+  max-width: 70%;
+}
+
+@media (min-width: 992px) {
+  .masthead-logo { max-width: 80%; }
+}
+
+.hero-sublead {
+  font-size: 1.25rem;         /* ≥ 20px for accessibility */
+  line-height: 1.65;
+  color: rgba(255,255,255,0.95);
+  margin: 0;
+}
+
+/* Divider tuned for dark panel */
+.divider {
+  width: 72px;
+  height: 3px;
+  border: 0;
+  background: rgba(255,255,255,0.85);
+  margin-inline: 0;
+}
+
+/* CTA button: high contrast + focus styles */
+.btn-hero {
+  background-color: #1d78ff;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: .75rem;
+  padding: 0.95rem 1.5rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: #2a8aff;
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.36);
+}
+.btn-hero:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn-hero { transition: none; }
+}
+
+/* Utility: ensure hero content sits above overlays */
+.masthead .container { position: relative; z-index: 1; }
