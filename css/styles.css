@@ -10839,6 +10839,16 @@ body {
   padding: 8rem 0;
 }
 
+section.page-section {
+  border-top: 4px solid #ffffff;
+}
+section.page-section:first-of-type {
+  border-top: none;
+}
+section.page-section:last-of-type {
+  border-bottom: 4px solid #ffffff;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -10935,6 +10945,12 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
+@media (max-width: 576px) {
+  header.masthead {
+    background-image: url("../assets/img/keyart/PinfallVerticalCropComp.jpg");
+    background-position: top center;
+  }
+}
 header.masthead .masthead-logo {
   max-width: 20rem;
   display: block;
@@ -10996,6 +11012,26 @@ header.masthead h1, header.masthead .h1 {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
+}
+
+#overview {
+  background-color: #eaf4ff;
+  background-image: none;
+}
+#overview .text-white,
+#overview .text-white-75 {
+  color: #142c4a !important;
+}
+#overview .text-white-75 strong {
+  color: inherit;
+}
+#overview .divider-light {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 2px rgba(20, 44, 74, 0.15);
+}
+#overview .btn-primary {
+  background-color: #1f6cd5;
+  border-color: #1f6cd5;
 }
 
 #screenshots .container-fluid, #screenshots .container-sm, #screenshots .container-md, #screenshots .container-lg, #screenshots .container-xl, #screenshots .container-xxl {
@@ -11112,7 +11148,7 @@ header.masthead .btn-steam {
 }
 
 .bg-primary {
-  background-color: #0f2f5c !important;
+  background-color: #ccdaed !important;
   background-image: radial-gradient(circle at top, rgba(64, 143, 226, 0.45), transparent 60%);
 }
 
@@ -11253,3 +11289,12 @@ header.masthead .btn-steam {
 
 /* Utility: ensure hero content sits above overlays */
 .masthead .container { position: relative; z-index: 1; }
+
+.section-break {
+  height: 2px;
+  border: 0;
+  background-color: #D9A374;
+  margin: 0;
+  width: 100%;
+  opacity: 1;
+}
