@@ -10986,7 +10986,7 @@ header.masthead h1, header.masthead .h1 {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
     padding-bottom: 0;
   }
   header.masthead .masthead-logo {
@@ -11025,9 +11025,30 @@ header.masthead h1, header.masthead .h1 {
 #overview .text-white-75 strong {
   color: inherit;
 }
+#overview .overview-video-frame {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgba(15, 26, 52, 0.35);
+}
+#overview .overview-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  #overview .overview-video-frame {
+    margin-top: 2rem;
+  }
+}
+#overview .overview-lead {
+  max-width: 32rem;
+  margin-right: auto;
+}
 #overview .divider-light {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 0 2px rgba(20, 44, 74, 0.15);
+  margin: 1.5rem 0;
 }
 #overview .btn-primary {
   background-color: #1f6cd5;
@@ -11291,7 +11312,7 @@ header.masthead .btn-steam {
 .masthead .container { position: relative; z-index: 1; }
 
 .section-break {
-  height: 2px;
+  height: 8px;
   border: 0;
   background-color: #D9A374;
   margin: 0;
