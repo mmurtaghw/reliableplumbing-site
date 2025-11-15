@@ -18,8 +18,42 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css?v=pinfall2" rel="stylesheet" />
+        <!-- Sender email signup integration -->
+        <script>
+          (function (s, e, n, d, er) {
+            s['Sender'] = er;
+            s[er] = s[er] || function () {
+              (s[er].q = s[er].q || []).push(arguments)
+            }, s[er].l = 1 * new Date();
+            var a = e.createElement(n),
+                m = e.getElementsByTagName(n)[0];
+            a.async = 1;
+            a.src = d;
+            m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+          sender('b3244086222988');
+        </script>
     </head>
     <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Reliable Plumbing</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#story-world">World</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mailing-list">Mailing List</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Masthead-->
         <header class="masthead" style="background-image:  url('assets/img/keyart/library_hero.png');">
             <div class="container px-4 px-lg-5 h-100">
@@ -63,57 +97,57 @@ Pinfall transforms frustration into reflection.</p>
             </div>
         </section>
         <hr class="section-break" aria-hidden="true" />
-        <!-- Long Description-->
-        <section class="page-section" id="long-description">
+        <!-- Story + World-->
+        <section class="page-section" id="story-world">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 class="text-center mt-0">The Long Climb</h2>
+                    <div class="col-lg-10 text-center">
+                        <h2 class="mt-0">The Long Climb</h2>
                         <hr class="divider" />
-                        <p class="text-muted lead">Pinfall is a tough precision pinball platformer set in a towering vertical world of ideas. Master flippers, plungers, and momentum as you climb through the eras of philosophy. You will fall. You will rise. And you will learn to ask why.</p>
+                        <p class="text-muted lead mb-0">Pinfall is a tough precision pinball platformer set in a towering vertical world of ideas. Master flippers, plungers, and momentum as you climb through the eras of philosophy. You will fall. You will rise. And you will learn to ask why.</p>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center text-start">
-                    <div class="col-lg-9">
-                        <h3 class="text-primary text-uppercase small fw-bold mt-4 mb-2">Stand on the Flippers of Giants</h3>
-                        <p class="text-muted">As you climb, you will discover that flippers are more than simple levers. They are instruments of thought. Blindly flipping will only send you back to the base of the world. To master Pinfall, you must clear your mind and understand the flipper's nature: the subtle bounce, the edge flip, the cradle. These are not tricks; they are the philosophies of motion.</p>
-                        <h3 class="text-primary text-uppercase small fw-bold mt-5 mb-2">Ascend the History of Thought</h3>
-                        <p class="text-muted">You are Baetyl, a lone spark of thought, climbing from the dark cave of ignorance toward the light of understanding. A voice calls out from the depths. Calm, commanding, and impossibly old. It names itself the Philosopher King, and urges you upward. Yet with every ascent, its wisdom begins to sound more like control.</p>
-                        <h3 class="text-primary text-uppercase small fw-bold mt-5 mb-2">Journey Toward Understanding</h3>
-                        <p class="text-muted">From the echoing cave of ignorance to the shattered spires of modernity, Pinfall takes you on a journey through worlds inspired by the evolution of philosophy: ancient, medieval, modern, and beyond. Traverse worlds shaped by thinkers and movements that transformed how humanity understands reality, truth, and the self.</p>
-                        <p class="text-muted mb-0">Each level is both physical and conceptual. Platforms crumble like forgotten doctrines, ideas linger in the soundscape, and progress feels like revelation.</p>
+                <div class="story-world-block row gx-4 gx-lg-5 align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <h3 class="text-primary text-uppercase small fw-bold mb-2">Awaken in the Cave</h3>
+                        <p class="text-muted">You begin deep below, a lone spark of thought reaching toward light. The earliest rooms of Pinfall drip with echoes of Plato&rsquo;s cave, teaching you that progress requires more than reflexes&mdash;it demands reflection.</p>
+                        <p class="text-muted mb-0">Every fling of the ball illuminates another carved philosophy, and every fall invites you to rise wiser.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded-4 shadow-sm" src="assets/img/screenshots/cave.png" alt="Pinfall screenshot of a cavern lit by ethereal light" />
+                    </div>
+                </div>
+                <div id="worlds" class="nav-anchor"></div>
+                <div class="story-world-block row gx-4 gx-lg-5 align-items-center mt-5">
+                    <div class="col-lg-6 order-lg-2">
+                        <h3 class="text-primary text-uppercase small fw-bold mb-2">Stand on the Flippers of Giants</h3>
+                        <p class="text-muted">As you climb, flippers reveal themselves as instruments of thought. Precision bounces and cradles are lessons handed down from philosophers of motion. Reckless flipping sends you back; mindful control lets you command chaos.</p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <img class="img-fluid rounded-4 shadow-sm" src="assets/img/screenshots/greek.png" alt="Pinfall screenshot of a greek-inspired arena" />
+                    </div>
+                </div>
+                <div class="story-world-block row gx-4 gx-lg-5 align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <h3 class="text-primary text-uppercase small fw-bold mb-2">Ascend the History of Thought</h3>
+                        <p class="text-muted">You are Baetyl, coaxed skyward by the Philosopher King. Ancient towers give way to gothic cathedrals and fragile clockwork as you push through eras of ideology. Each biome reshapes the rules you rely on, forcing you to re-evaluate what mastery really means.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded-4 shadow-sm" src="assets/img/screenshots/medieval.png" alt="Pinfall screenshot inside a cathedral-like space" />
+                    </div>
+                </div>
+                <div class="story-world-block row gx-4 gx-lg-5 align-items-center mt-5">
+                    <div class="col-lg-6 order-lg-2">
+                        <h3 class="text-primary text-uppercase small fw-bold mb-2">Journey Toward Understanding</h3>
+                        <p class="text-muted">From shattered modern skylines to speculative futures, every level is both physical and conceptual. Platforms crumble like outdated doctrines, sirens whisper competing truths, and every recovery feels like revelation.</p>
+                        <p class="text-muted mb-0">Your climb is the studio&rsquo;s manifesto: frustration transformed into reflection.</p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <img class="img-fluid rounded-4 shadow-sm" src="assets/img/screenshots/modern.png" alt="Pinfall screenshot of a fragmented modern skyline" />
                     </div>
                 </div>
             </div>
         </section>
-        <hr class="section-break" aria-hidden="true" />
-        <!-- Screenshots-->
-        <div id="screenshots">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/screenshots/cave.png">
-                            <img class="img-fluid" src="assets/img/screenshots/cave.png" alt="Pinfall screenshot of a cavern lit by ethereal light" />
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/screenshots/greek.png">
-                            <img class="img-fluid" src="assets/img/screenshots/greek.png" alt="Pinfall screenshot of a greek-inspired arena" />
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/screenshots/medieval.png">
-                            <img class="img-fluid" src="assets/img/screenshots/medieval.png" alt="Pinfall screenshot inside a cathedral-like space" />
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/screenshots/modern.png">
-                            <img class="img-fluid" src="assets/img/screenshots/modern.png" alt="Pinfall screenshot of a fragmented modern skyline" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <hr class="section-break" aria-hidden="true" />
         <!-- Team-->
         <section class="page-section bg-light" id="team">
@@ -154,6 +188,18 @@ Pinfall transforms frustration into reflection.</p>
                         <h2 class="mt-0">Connect With Reliable Plumbing Services</h2>
                         <hr class="divider" />
                         <p class="text-muted mb-5">Press, creators, and partners: reach out or connect with us on social as Pinfall climbs toward launch.</p>
+                    </div>
+                </div>
+                <div id="mailing-list" class="nav-anchor"></div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="h-100 p-4 bg-white shadow-sm rounded-4 text-center">
+                            <h3 class="h4 text-primary">Get the latest Pinfall updates</h3>
+                            <p class="text-muted mb-4">Subscribe to our mailing list for development updates, sneak peeks, and launch news.</p>
+                            <div class="email-signup-widget">
+                                <div class="sender-form-field" data-sender-form-id="dwpAK1"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -205,10 +251,5 @@ Pinfall transforms frustration into reflection.</p>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js?v=pinfall1"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
