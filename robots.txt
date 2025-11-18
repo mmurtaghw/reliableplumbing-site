@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pinfallgame.com/sitemap.xml
+Sitemap: https://fallosophygame.com/sitemap.xml

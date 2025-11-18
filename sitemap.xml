@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://pinfallgame.com/</loc>
-    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
+    <loc>https://fallosophygame.com/</loc>
+    <lastmod>2025-11-18T09:55:18+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://pinfallgame.com/assets/img/keyart/library_hero.png</image:loc>
-      <image:title>Pinfall Key Art</image:title>
+      <image:loc>https://fallosophygame.com/assets/img/keyart/library_hero.png</image:loc>
+      <image:title>Fallosophy Key Art</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://pinfallgame.com/assets/img/PinfallLogo.png</image:loc>
-      <image:title>Pinfall Logo</image:title>
+      <image:loc>https://fallosophygame.com/assets/img/FallosophyLogo.png</image:loc>
+      <image:title>Fallosophy Logo</image:title>
     </image:image>
   </url>
 </urlset>
