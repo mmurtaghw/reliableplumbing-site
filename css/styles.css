@@ -11095,10 +11095,12 @@ header.masthead h1, header.masthead .h1 {
 .brand-logo {
   height: 2.75rem;
   width: auto;
+  transform: scale(1.1);
+  transform-origin: left center;
   transition: transform 0.2s ease;
 }
 .navbar-brand:hover .brand-logo {
-  transform: rotate(-2deg) scale(1.02);
+  transform: scale(1.14) rotate(-2deg);
 }
 @media (max-width: 991.98px) {
   .brand-logo { height: 2.25rem; }
