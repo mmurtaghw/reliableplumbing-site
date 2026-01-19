@@ -10967,6 +10967,28 @@ header.masthead .hero-cta {
   align-items: center;
   gap: 0.75rem;
 }
+header.masthead .itch-embed {
+  margin: 1.75rem auto 0;
+  max-width: 34.5rem;
+  width: 100%;
+  text-align: center;
+}
+header.masthead .itch-embed-title {
+  color: #fff;
+  font-family: 'League Spartan', 'Merriweather Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+header.masthead .itch-embed iframe {
+  width: 100%;
+  height: 167px;
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
+}
 header.masthead .coming-soon {
   color: #fff;
   font-family: 'League Spartan', 'Merriweather Sans', sans-serif;
